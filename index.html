@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevKite | Reconcile Your True Net Profit Instantly</title>
+    <title>DevKite | Audit Your Marketplace Fees & True Net Profit</title>
     <link rel="icon" type="image/png" href="logo.PNG">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,11 +17,14 @@
             },
         }
     </script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "564a3a4008ab4b11afb48632b51ee6bc"}'></script></head>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "564a3a4008ab4b11afb48632b51ee6bc"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
 <body class="flex flex-col min-h-screen p-6 sm:p-12 md:px-20 md:py-14 max-w-6xl mx-auto justify-between relative overflow-x-hidden">
 
+    <!-- Ambient Premium Glow -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
 
+    <!-- Header -->
     <header class="flex justify-between items-center w-full border-b border-zinc-900 pb-6">
         <div class="flex items-center space-x-3">
             <img src="logo.png" alt="DevKite Logo" class="h-8 sm:h-10 w-auto object-contain mix-blend-screen">
@@ -32,24 +35,27 @@
         </a>
     </header>
 
+    <!-- Main Content -->
     <main class="my-auto py-16 md:py-24 space-y-16 w-full">
         
+        <!-- Merchant-Focused Hero -->
         <div class="space-y-6 md:space-y-8 text-center max-w-4xl mx-auto">
             <div class="inline-flex items-center space-x-2 bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-full">
                 <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></span>
-                <span class="text-[10px] uppercase tracking-widest font-bold text-cyan-400">Private Alpha Access</span>
+                <span class="text-[10px] uppercase tracking-widest font-bold text-cyan-400">Early Access Waitlist</span>
             </div>
 
             <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter text-white leading-[1.05] max-w-3xl mx-auto">
-                Drop in your marketplace CSVs. <br class="hidden sm:inline" />
-                See your <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-blue-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.2)]">True Net Profit</span>.
+                Drop in your sales reports. <br class="hidden sm:inline" />
+                See your <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-blue-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.2)]">Actual Take-Home Pay</span>.
             </h1>
 
             <p class="text-sm sm:text-base text-zinc-400 max-w-xl mx-auto font-light leading-relaxed">
-                No active store passwords or platform API access required. Audit your Shopee, Lazada, and Shopify adjustments instantly inside your browser with complete privacy.
+                Stop guessing your real margins. Export your raw spreadsheet reports from Shopee, Lazada, or Shopify and drop them here to instantly expose hidden overcharges, platform cuts, and shipping fee leaks.
             </p>
         </div>
 
+        <!-- Email Sign-up Form -->
         <div class="w-full max-w-xl mx-auto pt-2">
             <form id="waitlist-form" action="https://api.web3forms.com/submit" method="POST" class="w-full bg-zinc-900/30 border border-zinc-800/80 p-3 rounded-xl backdrop-blur-sm shadow-xl flex flex-col sm:flex-row gap-2">
                 <input type="hidden" name="access_key" value="1f13b774-737a-4ca1-9173-b8e3676649d6">
@@ -60,38 +66,39 @@
                 
                 <button id="submit-btn" type="submit" 
                     class="w-full sm:w-auto font-sans text-xs font-bold uppercase tracking-wider bg-cyan-500 text-zinc-950 rounded-lg px-6 py-3 hover:bg-cyan-400 transition-colors shadow-[0_0_15px_rgba(34,211,238,0.2)] whitespace-nowrap">
-                    Get Early Access
+                    Get Free Access
                 </button>
             </form>
             <div id="form-result" class="hidden mt-3 font-mono text-xs text-emerald-400 bg-emerald-500/5 border border-emerald-500/10 rounded-lg px-4 py-2.5 text-center"></div>
         </div>
 
+        <!-- Non-Technical Profit Breakdown Mockup -->
         <div class="w-full max-w-4xl mx-auto font-mono text-left text-xs bg-zinc-900/40 border border-zinc-800/80 rounded-xl overflow-hidden shadow-2xl">
             <div class="bg-zinc-950/60 px-6 py-3 border-b border-zinc-800/80 flex justify-between items-center text-zinc-500">
-                <span class="font-medium text-zinc-400">local_csv_reconciliation_engine</span>
-                <span class="text-cyan-400 text-[10px] font-bold uppercase tracking-wider bg-cyan-500/5 border border-cyan-500/10 px-2 py-0.5 rounded">Client-Side Logic</span>
+                <span class="font-medium text-zinc-400">automated_sales_audit</span>
+                <span class="text-cyan-400 text-[10px] font-bold uppercase tracking-wider bg-cyan-500/5 border border-cyan-500/10 px-2 py-0.5 rounded">100% Private & Secure</span>
             </div>
             
             <div class="p-6 sm:p-8 space-y-5">
                 <div class="flex items-center justify-between border border-dashed border-zinc-800/80 rounded-xl p-4 bg-zinc-950/50">
                     <div class="flex items-center space-x-3">
                         <span class="text-cyan-400 text-base">📄</span>
-                        <span class="text-zinc-300 font-medium">shopee_statement_q2.csv</span>
+                        <span class="text-zinc-300 font-medium">shopee_monthly_statement.csv</span>
                     </div>
-                    <span class="text-emerald-400 text-xs bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded">Loaded Successfully</span>
+                    <span class="text-emerald-400 text-xs bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded">File Scanned</span>
                 </div>
                 
                 <div class="space-y-2.5 text-zinc-400 text-xs sm:text-sm pt-2">
                     <div class="flex justify-between border-b border-zinc-900/60 pb-2">
-                        <span>Gross Marketplace Sales</span>
+                        <span>Total Customer Payments (Gross Sales)</span>
                         <span class="text-white font-medium">₱154,200.00</span>
                     </div>
                     <div class="flex justify-between border-b border-zinc-900/60 pb-2">
-                        <span>- Commission, Transaction & Service Fees</span>
+                        <span>- Platform Commissions & Transaction Fees</span>
                         <span class="text-red-400/80">-₱11,025.30</span>
                     </div>
                     <div class="flex justify-between border-b border-zinc-900/60 pb-2">
-                        <span>- Hidden Shipping Over-deductions</span>
+                        <span>- Hidden Lost Shipping Overcharges</span>
                         <span class="text-red-400/80">-₱4,120.00</span>
                     </div>
                 </div>
@@ -101,20 +108,22 @@
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-emerald-500/5 p-5 rounded-xl border border-emerald-500/10 gap-4">
                     <div>
                         <div class="text-emerald-400 font-bold text-xl sm:text-2xl tracking-tight">₱139,054.70</div>
-                        <div class="text-xs font-sans text-zinc-500 mt-0.5">True Reconciled Net Margin</div>
+                        <div class="text-xs font-sans text-zinc-500 mt-0.5">Your Real Profit (Ready for Bank Deposit)</div>
                     </div>
-                    <span class="text-emerald-400 text-xs bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-md font-bold tracking-wide">Calculated Securely in Browser</span>
+                    <span class="text-emerald-400 text-xs bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-md font-bold tracking-wide">Calculated Instantly On Your Device</span>
                 </div>
             </div>
         </div>
 
     </main>
 
+    <!-- Footer -->
     <footer class="flex justify-between items-center w-full border-t border-zinc-900 pt-6 text-[11px] text-zinc-600">
         <div>&copy; 2026 DevKite. All rights reserved.</div>
-        <div class="text-zinc-500 font-light">Zero API Connections. 100% Privacy.</div>
+        <div class="text-zinc-500 font-light">No store passwords or API access required. Your data never leaves your computer.</div>
     </footer>
 
+    <!-- Form Handler Script -->
     <script>
         const form = document.getElementById('waitlist-form');
         const result = document.getElementById('form-result');
@@ -132,7 +141,7 @@
                     body: JSON.stringify(Object.fromEntries(new FormData(form)))
                 })
                 .then(async (response) => {
-                    submitBtn.innerHTML = "Get Early Access";
+                    submitBtn.innerHTML = "Get Free Access";
                     submitBtn.disabled = false;
                     if (response.status == 200) {
                         result.classList.remove('hidden');
@@ -144,7 +153,7 @@
                     }
                 })
                 .catch(() => {
-                    submitBtn.innerHTML = "Get Early Access";
+                    submitBtn.innerHTML = "Get Free Access";
                     submitBtn.disabled = false;
                     result.innerHTML = "Something went wrong.";
                     result.classList.remove('hidden');
