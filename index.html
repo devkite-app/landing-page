@@ -109,53 +109,60 @@
 
         <!-- Non-Technical Profit Breakdown Mockup -->
         <div class="w-full max-w-4xl mx-auto font-mono text-left text-xs bg-zinc-900/40 border border-zinc-800/80 rounded-xl overflow-hidden shadow-2xl">
-            <div class="bg-zinc-950/60 px-6 py-3 border-b border-zinc-800/80 flex justify-between items-center text-zinc-500">
-                <span class="font-medium text-zinc-400">automated_sales_audit</span>
-                <span class="text-cyan-400 text-[10px] font-bold uppercase tracking-wider bg-cyan-500/5 border border-cyan-500/10 px-2 py-0.5 rounded">100% Private & Secure</span>
+            <!-- Header Section: Stack on mobile, side-by-side on desktop -->
+            <div class="bg-zinc-950/60 px-4 sm:px-6 py-3 border-b border-zinc-800/80 flex flex-col sm:flex-row gap-2 sm:justify-between sm:items-center text-zinc-500">
+                <span class="font-medium text-zinc-400 text-[11px] sm:text-xs tracking-tight">automated_sales_audit</span>
+                <span class="text-cyan-400 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider bg-cyan-500/5 border border-cyan-500/10 px-2 py-0.5 rounded self-start sm:self-auto">100% Private & Secure</span>
             </div>
             
-            <div class="p-6 sm:p-8 space-y-5">
-                <div class="flex items-center justify-between border border-dashed border-zinc-800/80 rounded-xl p-4 bg-zinc-950/50">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-cyan-400 text-base">📄</span>
-                        <span class="text-zinc-300 font-medium">sales_monthly_statement.csv</span>
+            <div class="p-4 sm:p-8 space-y-5">
+                <!-- File Upload Box: Flex-wrap ensures button doesn't fall off screen layout edges -->
+                <div class="flex flex-wrap items-center justify-between gap-3 border border-dashed border-zinc-800/80 rounded-xl p-3 sm:p-4 bg-zinc-950/50">
+                    <div class="flex items-center space-x-2 sm:space-x-3 min-w-0">
+                        <span class="text-cyan-400 text-sm sm:text-base flex-shrink-0">📄</span>
+                        <span class="text-zinc-300 font-medium text-[11px] sm:text-xs truncate">sales_monthly_statement.csv</span>
                     </div>
-                    <span class="text-emerald-400 text-xs bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded">File Scanned</span>
+                    <span class="text-emerald-400 text-[10px] sm:text-xs bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded whitespace-nowrap">File Scanned</span>
                 </div>
                 
-                <div class="space-y-2.5 text-zinc-400 text-xs sm:text-sm pt-2">
-                    <div class="flex justify-between border-b border-zinc-900/60 pb-2">
-                        <span>Total Customer Payments (Gross Sales)</span>
-                        <span class="text-white font-medium">₱154,200.00</span>
+                <!-- Financial Line Items Layout Grid with Proper Horizontal Spacing Protection -->
+                <div class="space-y-3 text-zinc-400 text-xs sm:text-sm pt-1">
+                    <div class="flex justify-between items-start gap-x-4 border-b border-zinc-900/60 pb-2.5">
+                        <span class="pr-2 leading-tight">Total Customer Payments (Gross Sales)</span>
+                        <span class="text-white font-medium whitespace-nowrap">₱154,200.00</span>
                     </div>
-                    <div class="flex justify-between border-b border-zinc-900/60 pb-2">
-                        <span>- Platform Commissions & Transaction Fees</span>
-                        <span class="text-red-400/80">-₱11,025.30</span>
+                    <div class="flex justify-between items-start gap-x-4 border-b border-zinc-900/60 pb-2.5">
+                        <span class="pr-2 leading-tight">- Platform Commissions & Fees</span>
+                        <span class="text-red-400/80 font-medium whitespace-nowrap">-₱11,025.30</span>
                     </div>
-                    <div class="flex justify-between border-b border-zinc-900/60 pb-2">
-                        <span>- Hidden Lost Shipping Overcharges / Gateway Leaks</span>
-                        <span class="text-red-400/80">-₱4,120.00</span>
+                    <div class="flex justify-between items-start gap-x-4 border-b border-zinc-900/60 pb-2.5">
+                        <span class="pr-2 leading-tight">- Hidden Shipping Overcharges / Gateway Leaks</span>
+                        <span class="text-red-400/80 font-medium whitespace-nowrap">-₱4,120.00</span>
                     </div>
                 </div>
 
                 <div class="border-t border-zinc-800/60 my-4"></div>
 
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-emerald-500/5 p-5 rounded-xl border border-emerald-500/10 gap-4">
-                    <div>
+                <!-- Bottom Profit Bar Layout -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-emerald-500/5 p-4 sm:p-5 rounded-xl border border-emerald-500/10 gap-4">
+                    <div class="space-y-0.5">
                         <div class="text-emerald-400 font-bold text-xl sm:text-2xl tracking-tight">₱139,054.70</div>
-                        <div class="text-xs font-sans text-zinc-500 mt-0.5">Your Real Profit (Ready for Bank Deposit)</div>
+                        <div class="text-[11px] sm:text-xs font-sans text-zinc-500">Your Real Profit (Ready for Bank Deposit)</div>
                     </div>
-                    <span class="text-emerald-400 text-xs bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-md font-bold tracking-wide">Calculated Instantly On Your Device</span>
+                    <span class="text-emerald-400 text-[10px] sm:text-xs bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-md font-bold tracking-wide w-full sm:w-auto text-center">
+                        Calculated Instantly On Your Device
+                    </span>
                 </div>
             </div>
         </div>
+
 
     </main>
 
     <!-- Footer -->
     <footer class="flex justify-between items-center w-full border-t border-zinc-900 pt-6 text-[11px] text-zinc-600">
         <div>&copy; 2026 DevKite. All rights reserved.</div>
-        <div class="text-zinc-500 font-light">No store passwords or API access required. Your data never leaves your computer.</div>
+        <div class="text-zinc-500 font-light">No store passwords or API access required. Your data never leaves your device.</div>
     </footer>
 
     <!-- Form Handler Script -->
